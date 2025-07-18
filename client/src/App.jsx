@@ -10,7 +10,8 @@ import RemoveBackground from './pages/Removebackground'
 import RemoveObject from './pages/RemoveObject'
 import ReviewResume from './pages/ReviewResume'
 import Community from './pages/Community'
-
+import { ClerkProvider } from '@clerk/clerk-react'
+ 
 const App = () => {
   return (
     <div>
