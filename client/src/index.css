@@ -11,3 +11,14 @@
     --color-primary: #5044E5;
     /* --color-secondary: #0BB0D7; */
 }
+
+.cl-pricingTable {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; /* Centers items horizontally */
+  align-items: center;   /* Centers items vertically */
+  /* ... other grid properties ... */
+  width: 100%;
+  min-height: auto; /* optional: make all boxes same height */
+  box-sizing: border-box;
+}
