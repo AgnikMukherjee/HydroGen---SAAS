@@ -17,7 +17,7 @@ const WriteArticle = () => {
     console.log(input, selectedLength)
   }
   return (
-    <div className='h-full overflow-y-scroll p-6 flex items-start flex-wrap gap-4 text-slate-700'>
+    <div className='h-full overflow-y-scroll p-6 flex items-start flex-row gap-4 text-slate-700'>
       {/* col 1 */}
       <form onSubmit={onSubmitHandler} className='w-full max-w-lg p-4 bg-white rounded-lg border border-gray-200'>
         <div className='flex items-center gap-3'>
@@ -25,7 +25,7 @@ const WriteArticle = () => {
           <h1 className='text-2xl font-semibold'>Article Configuration</h1>
         </div>
 
-        <p>Article Topic</p>
+        <p className='mt-6 text-sm font-medium'>Article Topic</p>
         <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter the topic of your article' required className='w-full p-2 px-2 mt-2 outline-none border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500' />
 
         <p className='mt-4 text-sm font-medium'>Article length</p>
@@ -47,7 +47,7 @@ const WriteArticle = () => {
         </button>
       </form>
       {/* col 2 */}
-      <div className='w-full max-w-lg p-4 bg-white rounded-lg border border-gray-200 flex flex-col min-h-85 max-h-[600px]'>
+      <div className='w-full max-w-lg p-4 bg-white rounded-lg border border-gray-200 flex flex-col min-h-90 max-h-[600px]'>
           <div className='flex items-center gap-3'>
               <Edit className='w-5 h-5 text-[#4A7AFF]'/>
               <h1 className='text-xl font-semibold'>Article Preview</h1>
