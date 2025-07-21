@@ -23,7 +23,7 @@ const BlogTitles = () => {
         </div>
 
         <p className='mt-6 text-sm font-medium'>Keyword</p>
-        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter the topic of your article' required className='w-full p-2 px-2 mt-2 outline-none border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500' />
+        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder='Enter the keyword of your blog title' required className='w-full p-2 px-2 mt-2 outline-none border border-gray-300 rounded-md focus:ring-2 focus:ring-purple-500' />
 
         <p className='mt-4 text-sm font-medium'>Category</p>
         <div className='flex flex-wrap gap-3 mt-3 sm:max-w-9/11'>
