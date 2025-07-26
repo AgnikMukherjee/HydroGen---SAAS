@@ -12,6 +12,11 @@
     /* --color-secondary: #0BB0D7; */
 }
 
+.text-stroke-primary {
+  color: white;
+  -webkit-text-stroke: 1.2px #445ce5; /* Replace with your primary color */
+}
+
 .cl-pricingTable {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

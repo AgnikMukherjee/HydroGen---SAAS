@@ -11,15 +11,25 @@ const Navbar = () => {
 
   return (
     <div className='fixed z-5 w-full backdrop-blur-2xl flex justify-between items-center py-3 px-4 sm:px-20 xl:px-32'>
-      <img src={assets.logo} alt="" className='w-32 sm:w-44 cursor-pointer' onClick={() => navigate('/')} />
+      {/* <div className='w-32 sm:w-44 cursor-pointer' onClick={() => navigate('/')} /> Hydro <span className='text-primary'>Gen</span>
+       <div/> */}
+      <div className="flex flex-col items-center justify-center cursor-pointer" onClick={() => {
+        console.log('Logo clicked');
+        navigate('/');
+      }}>
+        <h2 className="text-[34px] font-bold flex gap-0">
+          <span className="text-transparent bg-clip-text bg-gradient-to-b from-black/80 to-black/30">Hydro</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary">Gen</span>
+        </h2>
+      </div>
 
       {
         user ? (
           <UserButton />
         ) : (
-          <button 
-          onClick={() => openSignIn()}
-          className='flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-10 py-2.5'>
+          <button
+            onClick={() => openSignIn()}
+            className='flex items-center gap-2 rounded-full text-sm cursor-pointer bg-primary text-white px-10 py-2.5'>
             Get Started <ArrowRight className='w-4 h-4' />
           </button>
         )
