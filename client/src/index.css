@@ -12,10 +12,16 @@
     /* --color-secondary: #0BB0D7; */
 }
 
-.text-stroke-primary {
+/* .text-stroke-primary {
   color: white;
-  -webkit-text-stroke: 1.2px #445ce5; /* Replace with your primary color */
+  -webkit-text-stroke: 1.2px #445ce5;
 }
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #5044E5;
+  }
+} */
 
 .cl-pricingTable {
   display: grid;

@@ -18,7 +18,7 @@ const Navbar = () => {
         navigate('/');
       }}>
         <h2 className="text-[34px] font-bold flex gap-0">
-          <span className="text-transparent bg-clip-text bg-gradient-to-b from-black/80 to-black/30">Hydro</span>
+          <span className="text-white text-shadow-md/50">Hydro</span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-primary">Gen</span>
         </h2>
       </div>
