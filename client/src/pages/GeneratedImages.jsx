@@ -23,6 +23,7 @@ const GeneratedImages = () => {
         </div>
 
         <p className='mt-6 text-sm font-medium'>Describe your image</p>
+        
         <textarea onChange={(e) => setInput(e.target.value)} value={input} rows={4} placeholder='Describe what do you want in your image' required className='w-full p-2 px-2 mt-2 outline-none border border-gray-300 rounded-md focus:ring-2 focus:ring-green-500' />
 
         <p className='mt-4 text-sm font-medium'>Style</p>
