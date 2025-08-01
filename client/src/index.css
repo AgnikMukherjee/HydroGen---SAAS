@@ -23,16 +23,16 @@
   }
 } */
 
-.cl-pricingTable {
+/* .cl-pricingTable {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center; /* Centers items horizontally */
-  align-items: center;   /* Centers items vertically */
-  /* ... other grid properties ... */
+  justify-items: center; 
+  align-items: center;   
+  
   width: 100%;
-  min-height: auto; /* optional: make all boxes same height */
+  min-height: auto; 
   box-sizing: border-box;
-}
+} */
 
 .cl-drawerRoot{
   z-index: 10

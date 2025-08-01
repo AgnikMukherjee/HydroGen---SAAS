@@ -49,13 +49,7 @@ const Sidebar = ({ sidebar, setSidebar }) => {
                     <div>
                         <h1 className='text-sm font-medium'>{user.fullName}</h1>
                         <p className='text-xs text-gray-500'>
-                            <Protect plan="Molecule" fallback={
-                                <Protect plan="Atom" fallback="Quark (Free)">
-                                    Atom
-                                </Protect>
-                            }>
-                                Molecule
-                            </Protect>
+                            <Protect plan="premium" fallback="Quark (Free)"> Atom (Premium)</Protect> plan
                         </p>
                     </div>
                 </div>
