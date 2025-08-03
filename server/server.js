@@ -12,7 +12,10 @@ const app = express();
 await connectCloudinary();
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json({
+  origin: ['http://localhost:5173', 'http://localhost:5174', process.env.CLIENT_URL],
+  credentials: true
+}));
 
 app.use(clerkMiddleware({
     secretKey: process.env.CLERK_SECRET_KEY,
