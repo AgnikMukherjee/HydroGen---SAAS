@@ -155,7 +155,7 @@ export const removeImageBackground = async (req, res) => {
 export const removeImageObject = async (req, res) => {
     try {
         const { userId } = req.auth();
-        const { image } = req.file;
+        const image = req.file;
         const {object} = req.body;
         const plan = req.plan;
 
